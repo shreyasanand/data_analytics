@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Population Visualization</title>
+    <h2>US states by population change: 2010-2011</h2>
+    <script type='text/javascript' src='pop_change.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://jquery-csv.googlecode.com/files/jquery.csv-0.71.js" type='text/javascript'></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+	<script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['corechart','geochart']});
+     google.setOnLoadCallback(onLoad);
+	</script>
+  </head>
+  <body>
+    <div id="geochart_div" style="width: 900px; height: 500px;"></div>
+    <div id="barchart_div" style="margin-top: 100px; width: 900px; height: 600px;"></div>
+  </body>
+</html>
